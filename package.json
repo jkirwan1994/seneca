@@ -79,6 +79,9 @@
   },
   "dependencies": {
     "archy": "1.0",
+    "connect": "3.6.6",
+    "connect-query" : "1.0",
+    "body-parser" : "1.18.3",
     "eraro": "1.0",
     "gate-executor": "1.1",
     "gex": "0.3",
