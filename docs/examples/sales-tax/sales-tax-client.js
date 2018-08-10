@@ -9,10 +9,10 @@ seneca.add({cmd: 'salestax'}, function (args, callback) {
   })
 })
 
-seneca.client()
+seneca.client({pin: {cmd: 'config'}, port: 9090})
 
 seneca.ready(function () {
-  seneca.add({cmd: 'sales-tax', net: 100}, function (err, result) {
+  seneca.act({cmd: 'salestax', net: 100}, function (err, result) {
     if (err) return console.error(err)
     console.log(result.total)
     seneca.close()
