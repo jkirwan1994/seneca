@@ -8,4 +8,4 @@ seneca.add({cmd: 'config'}, function (args, callback) {
   callback(null, {value: value})
 })
 
-seneca.listen()
+seneca.listen({pin: {cmd: 'config'}, port: 9090})
