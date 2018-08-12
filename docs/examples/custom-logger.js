@@ -24,7 +24,7 @@ Logger.preload = function () {
     return content
   }
 
-  // Everything something is logged it calls whatever
+  // Everytime something is logged it calls whatever
   // custom adapter is set. Adapters are passed the
   // current instance of Seneca plus the raw payload.
   function adapter (context, payload) {
