@@ -18,7 +18,7 @@ kill $CONFIG_SERVER_PID
 echo sales-tax-complex >> testrun.log
 node sales-tax-complex.js --seneca.log.quiet >> testrun.log
 
-echo sales-tax-plugin/app >> testrun.log
+echo sales-tax-app-plugin/app >> testrun.log
 node sales-tax-app.js --seneca.log=plugin:shop > testrun.server.tmp &
 APP_SERVER_PID=$!
 sleep 1
