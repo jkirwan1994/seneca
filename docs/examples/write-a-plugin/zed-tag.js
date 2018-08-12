@@ -1,6 +1,6 @@
 
 function zed( options ) {
-  console.log( this.context.name, this.context.tag, options )
+  console.log( this.fixedargs.plugin$.name, this.fixedargs.plugin$.tag, options )
 }
 
 var seneca = require('../../..')()
