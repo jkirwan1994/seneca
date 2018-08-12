@@ -20,15 +20,7 @@ module.exports = function (options) {
     callback(null, { total: total })
   })
 
-  seneca.act({ role: 'web', use: {
-    prefix: 'shop/',
-    pin: { role: 'shop', cmd: '*' },
-    map: {
-      salestax: { GET: true }
-    }
-  }})
-
-  return {
+ return {
     name: plugin
   }
 }
