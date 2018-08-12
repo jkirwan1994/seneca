@@ -1,5 +1,5 @@
 
-var seneca = require('../../../lib/seneca.js')()
+var seneca = require('../../..')()
 
 var foo = {
   bar: 1,
