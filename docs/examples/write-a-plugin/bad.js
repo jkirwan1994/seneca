@@ -21,7 +21,7 @@ function bad( options ) {
 
 }
 
-var seneca = require('../../../lib/seneca.js')()
+var seneca = require('../../..')()
 
 seneca.use( bad, {color:'intelligent blue'} )
 
